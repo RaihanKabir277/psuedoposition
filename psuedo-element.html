@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Element</title>
+    <style>
+        body{
+            margin-left: 50px;
+        }
+        h3::after{
+            content: '.pdf';
+            color: red;
+            font-weight: 700px;
+            /* background-color: blue; */
+        }
+        p::first-letter{
+            font-size: 3em;
+            color: red;
+        }
+        ::selection{
+            background-color: rebeccapurple;
+        }
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>heading -1</h3>
+    <h3>heading -2</h3>
+    <h3>heading -3</h3>
+    <p > 
+        Lorem ipsum dolor sit yes  no very good
+    </p>
+</body>
+</html>
